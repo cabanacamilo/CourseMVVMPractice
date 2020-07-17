@@ -10,10 +10,14 @@
 		2F776DED24C17BAE00A14242 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F776DEC24C17BAE00A14242 /* AppDelegate.swift */; };
 		2F776DEF24C17BAE00A14242 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F776DEE24C17BAE00A14242 /* SceneDelegate.swift */; };
 		2F776DF124C17BAE00A14242 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F776DF024C17BAE00A14242 /* ViewController.swift */; };
-		2F776DF424C17BAE00A14242 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F776DF224C17BAE00A14242 /* Main.storyboard */; };
 		2F776DF624C17BB600A14242 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F776DF524C17BB600A14242 /* Assets.xcassets */; };
 		2F776DF924C17BB600A14242 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F776DF724C17BB600A14242 /* LaunchScreen.storyboard */; };
 		2F776E0424C17BB600A14242 /* CourseMVVMPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F776E0324C17BB600A14242 /* CourseMVVMPracticeTests.swift */; };
+		2F776E1024C17D1900A14242 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F776E0F24C17D1900A14242 /* Course.swift */; };
+		2F776E1324C17DD100A14242 /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F776E1224C17DD100A14242 /* CourseCell.swift */; };
+		2F776E1624C1846200A14242 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F776E1524C1846200A14242 /* Service.swift */; };
+		2F776E1A24C18C6800A14242 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F776E1924C18C6800A14242 /* Colors.swift */; };
+		2F776E1D24C195E700A14242 /* CourseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F776E1C24C195E700A14242 /* CourseViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +35,17 @@
 		2F776DEC24C17BAE00A14242 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F776DEE24C17BAE00A14242 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2F776DF024C17BAE00A14242 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2F776DF324C17BAE00A14242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F776DF524C17BB600A14242 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F776DF824C17BB600A14242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F776DFA24C17BB600A14242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F776DFF24C17BB600A14242 /* CourseMVVMPracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CourseMVVMPracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F776E0324C17BB600A14242 /* CourseMVVMPracticeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseMVVMPracticeTests.swift; sourceTree = "<group>"; };
 		2F776E0524C17BB600A14242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F776E0F24C17D1900A14242 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		2F776E1224C17DD100A14242 /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
+		2F776E1524C1846200A14242 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		2F776E1924C18C6800A14242 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		2F776E1C24C195E700A14242 /* CourseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +87,14 @@
 		2F776DEB24C17BAE00A14242 /* CourseMVVMPractice */ = {
 			isa = PBXGroup;
 			children = (
+				2F776E1824C18C4700A14242 /* Extensions */,
+				2F776E1424C1843B00A14242 /* Services */,
+				2F776E0E24C17CF200A14242 /* Models */,
+				2F776E1B24C195BA00A14242 /* ViewModels */,
+				2F776E1124C17D9F00A14242 /* Views */,
+				2F776E1724C1893800A14242 /* Controllers */,
 				2F776DEC24C17BAE00A14242 /* AppDelegate.swift */,
 				2F776DEE24C17BAE00A14242 /* SceneDelegate.swift */,
-				2F776DF024C17BAE00A14242 /* ViewController.swift */,
-				2F776DF224C17BAE00A14242 /* Main.storyboard */,
 				2F776DF524C17BB600A14242 /* Assets.xcassets */,
 				2F776DF724C17BB600A14242 /* LaunchScreen.storyboard */,
 				2F776DFA24C17BB600A14242 /* Info.plist */,
@@ -97,6 +109,54 @@
 				2F776E0524C17BB600A14242 /* Info.plist */,
 			);
 			path = CourseMVVMPracticeTests;
+			sourceTree = "<group>";
+		};
+		2F776E0E24C17CF200A14242 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2F776E0F24C17D1900A14242 /* Course.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2F776E1124C17D9F00A14242 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2F776E1224C17DD100A14242 /* CourseCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2F776E1424C1843B00A14242 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2F776E1524C1846200A14242 /* Service.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2F776E1724C1893800A14242 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2F776DF024C17BAE00A14242 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2F776E1824C18C4700A14242 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2F776E1924C18C6800A14242 /* Colors.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2F776E1B24C195BA00A14242 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2F776E1C24C195E700A14242 /* CourseViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,7 +242,6 @@
 			files = (
 				2F776DF924C17BB600A14242 /* LaunchScreen.storyboard in Resources */,
 				2F776DF624C17BB600A14242 /* Assets.xcassets in Resources */,
-				2F776DF424C17BAE00A14242 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,9 +259,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F776E1024C17D1900A14242 /* Course.swift in Sources */,
 				2F776DF124C17BAE00A14242 /* ViewController.swift in Sources */,
 				2F776DED24C17BAE00A14242 /* AppDelegate.swift in Sources */,
+				2F776E1A24C18C6800A14242 /* Colors.swift in Sources */,
 				2F776DEF24C17BAE00A14242 /* SceneDelegate.swift in Sources */,
+				2F776E1D24C195E700A14242 /* CourseViewModel.swift in Sources */,
+				2F776E1324C17DD100A14242 /* CourseCell.swift in Sources */,
+				2F776E1624C1846200A14242 /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,14 +289,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2F776DF224C17BAE00A14242 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2F776DF324C17BAE00A14242 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2F776DF724C17BB600A14242 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -365,6 +421,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WK8JGF9VN3;
 				INFOPLIST_FILE = CourseMVVMPractice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -383,6 +440,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WK8JGF9VN3;
 				INFOPLIST_FILE = CourseMVVMPractice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
